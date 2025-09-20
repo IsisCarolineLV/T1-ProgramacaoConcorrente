@@ -1,0 +1,39 @@
+.slider1 .track {
+    -fx-background-color: #bb5735;
+    -fx-pref-height: 8px;
+}
+
+.slider1 .thumb {
+    -fx-background-color: #75140d;
+}
+.slider2 .track {
+    -fx-background-color: #798db1;
+    -fx-pref-height: 8px;
+}
+
+.slider2 .thumb {
+    -fx-background-color: #494b7a;
+}
+
+.combo-box {
+    -fx-background-color: linear-gradient(to bottom, #db8264, #75140d);
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-alignment: center;
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: #efdcb0;
+}
+
+.combo-box .list-cell {
+    -fx-background-color: #e3d3ac;
+    -fx-text-fill: #494b7a;
+    -fx-alignment: center;
+}
+
+.combo-box .list-view {
+    -fx-background-color: #efdcb0;
+}

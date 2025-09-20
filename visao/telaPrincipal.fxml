@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorPanePrincipal" maxHeight="670.0" maxWidth="1200" minHeight="670" minWidth="670.0" prefHeight="670.0" prefWidth="1199.0" stylesheets="@personalizacao.css" xmlns="http://javafx.com/javafx/1.8.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controle.ControllerTelaPrincipal">
+   <children>
+      <ImageView fitHeight="670.0" fitWidth="1200.0" layoutX="263.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../imagens/bordaTela.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="fundoTelaPrincipal" fitHeight="670.0" fitWidth="1200.0" layoutX="253.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../imagens/FundoPrincipal.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="670.0" fitWidth="35.0" layoutX="1186.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="-21.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../imagens/remendo.png" />
+         </image>
+      </ImageView>
+      <Slider fx:id="sliderVelocidadeDaNave1" layoutX="675.0" layoutY="454.0" max="10.0" onMouseEntered="#destacarSlider1" onMouseExited="#retornarProModoNormal" prefHeight="38.0" prefWidth="409.0" styleClass="slider1" value="5.0" />
+      <Slider fx:id="sliderVelocidadeDaNave2" layoutX="675.0" layoutY="553.0" max="10.0" onMouseEntered="#destacarSlider2" onMouseExited="#retornarProModoNormal" prefHeight="38.0" prefWidth="409.0" styleClass="slider2" value="5.0" />
+      <ImageView fx:id="imageViewBotaoSair" fitHeight="74.0" fitWidth="81.0" layoutX="500.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/botaoSair.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageViewBotaoReiniciar" fitHeight="124.0" fitWidth="177.0" layoutX="312.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/botaoReiniciar.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageViewBotaoVoltar" fitHeight="74.0" fitWidth="81.0" layoutX="224.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/botaoVoltar.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="316.0" layoutY="58.0" mnemonicParsing="false" onAction="#clicouBotaoReiniciar" onMouseEntered="#destacarBotaoReiniciar" onMouseExited="#retornarProModoNormal" opacity="0.0" prefHeight="74.0" prefWidth="165.0" text="Reiniciar" />
+      <Button layoutX="223.0" layoutY="58.0" mnemonicParsing="false" onAction="#clicouBotaoVoltar" onMouseEntered="#destacarBotaoVoltar" onMouseExited="#retornarProModoNormal" opacity="0.0" prefHeight="67.0" prefWidth="72.0" text="Voltar" />
+      <Button layoutX="503.0" layoutY="65.0" mnemonicParsing="false" onAction="#clicouBotaoSair" onMouseEntered="#destacarBotaoSair" onMouseExited="#retornarProModoNormal" opacity="0.0" prefHeight="67.0" prefWidth="72.0" text="Sair" />
+      <ComboBox fx:id="comboBoxEscolheDisposicao" layoutX="255.0" layoutY="144.0" onMouseEntered="#destacarComboBox" onMouseExited="#retornarProModoNormal" prefHeight="30.0" prefWidth="283.0" />
+   </children>
+</AnchorPane>
